@@ -1,0 +1,43 @@
+.inputclass{
+  display: inline;
+  float: right;
+  position: absolute;
+  margin-top: 0;
+  padding-top: 0;
+}
+.btn-search {
+  width: 70px;
+  display: inline;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  align-items: center;
+}
+
+.btn-search svg {
+  fill: #ccc;
+  width: 30px;
+  height: 30px;
+  transition: all .2s ease-out, color .2s ease-out;
+}
+
+.btn-search:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn-search:hover svg, .btn-search:focus svg {
+  fill: #666;
+}

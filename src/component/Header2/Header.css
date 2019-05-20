@@ -1,0 +1,145 @@
+.toolbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+ z-index: 100;
+ height: 56px;
+  padding: 0;
+  background: #373a48;
+}
+.toolbar_logo{
+  margin-left: 1rem;
+}
+
+.toolbar_logo a{
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  display: inline-block;
+}
+.toolbar_logo2{
+  position: fixed;
+  right: 0;
+  padding-right: 2rem;
+}
+
+.toolbar_navigation{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding:0;
+  margin: 0;
+  z-index: -100;
+}
+.toolbar_logo a{
+  color:white;
+  text-decoration: none;
+  font-size : 1.5rem;
+  text-transform: uppercase;
+}
+.toolbar_logo2 a{
+  color:white;
+  text-decoration: none;
+  font-size : 1.5rem;
+  text-transform: uppercase;
+}
+.toolbar_navigation-items{
+  margin: 0;
+  display: block;
+  padding: 0;
+
+}
+.toolbar_navigation-items ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+}
+
+
+.toolbar_navigation-items ul li a{
+color: white;
+padding: 15px 10px;
+margin: 8px 0;
+width: 100%;
+height: 100%;
+font-family: sans-serif;
+margin: 0;
+cursor: pointer;
+text-decoration: none;
+display: block;
+}
+.toolbar_navigation-items ul li a:hover,.toolbar_navigation-items ul li:hover,
+.toolbar_navigation-items ul li a:active{
+  color :black;
+  background: white;
+  border-radius: 40px;
+margin :0;
+}
+.toolbar_navigation-items ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ .toolbar_navigation-items ul li{
+  padding:0 0.5rem;
+  margin-left: 2px;
+  text-transform: uppercase;
+
+}
+
+.outerSearchBox{
+  z-index: -100;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top:50px;
+  margin-top: 8px;
+display: inline-flex;
+}
+.searchBox{
+  display: inline-flex;
+  width: auto;
+}
+i{
+  color:white;
+}
+@media (max-width:768px) {
+  .toolbar_navigation-items{
+      display: none;
+  }
+  #searchButton{
+    display: none;
+  }
+  #searchInput{
+    display: none;
+  }
+
+  .toolbar_logo{
+    display: none;
+  }
+
+}
+.outerSearchBox input[type=text] {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+@media (min-width:786px) {
+  .toolbar-toggle-button
+  {
+    display: none;
+  }
+  .toolbar_logo2{
+    display: none;
+  }
+
+.outerSearchBox{
+display: none;
+}
+}

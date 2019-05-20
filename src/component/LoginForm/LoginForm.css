@@ -1,0 +1,108 @@
+.loginForm{
+  z-index: 100;
+  background: #e6e6e6;
+  height: 300px;
+  transition: transformY(-100%);
+  transition: 1;
+   padding: 0;
+   -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.8s;
+  animation-name: animatetop;
+  animation-duration: 0.8s
+}
+form {
+  padding: 0;
+border: 3px solid #f1f1f1;
+background: #e6e6e6;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 35%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 14px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.forGotBlock{
+  background-color: #f1f1f1;
+}
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+@media (min-width:786px) {
+  .loginForm{
+    margin: auto;
+    margin-top: 50px;
+    max-height: 100px;
+    max-width: 500px;
+  }
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

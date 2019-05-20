@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+.filterDivHide{
+display:flex;
+}
+.cardClass{
+  position: relative;
+  top:150px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.filterDiv{
+  position: relative;
+  top:150px;
+  margin: 0px;
+  width: 100%;
+  margin-right: 0px;
+  box-sizing: border-box;
+}
+
+.carousel{
+display: 'flex';
+}
+.appMenuBar{
+  position: fixed;
+  z-index: 100;
+
+}
+.footer{
+  position: relative;
+  top: 50px;
+}
+.fiterColapseDiv{
+  position: fixed;
+  top:90px;
+  float:right;
+  font-size: 2rem;
+}
+.filterColapseIcon{
+  float: right;
+  margin-top: 3px;
+  position: fixed;
+  top:100px;
+  right: 0;
+  cursor: pointer;
+}
+
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+.filterSpan{
+  margin-top: 3px;
+  position: fixed;
+  top:100px;
+  left: 0;
+  cursor: pointer;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width:786px) {
+  .carousel{
+    margin-top: 200px;
+  }
+  .menuBar{
+    display: none;
+  }
+  .filterDivHide{
+    display: none;
+  }
+
+}
+@media (min-width:786px) {
+     .fiterColapseDiv{
+       display: none;
+     }
+}

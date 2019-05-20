@@ -1,0 +1,57 @@
+.filterClass{
+  margin:0px;
+  padding: 0px;
+}
+ul{
+  list-style: none;
+  margin-left: 5px;
+  padding: 0;
+  cursor: pointer;
+}
+li{
+  font-size: 0.9rem;
+}
+.searchText{
+  position:absolute;
+  left: 40px;
+  border-style: none;
+  outline: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+.searchButton{
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.searchIcon{
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+.hrClass {
+  position: relative;
+  top:30px;
+  bottom: 0px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.chekBoxClass{
+  position: relative;
+  top:20px;
+}
+.chekBoxUlClass{
+  list-style: none;
+}
+.filterIcon{
+position: absolute;
+right: 0;
+}
+.filterHeading{
+  float: left;
+  padding-right: 100px;
+}
