@@ -28,21 +28,27 @@ const styles = theme => ({
     marginRight:'auto',
        // 16:9
   },
-
+  menudiv:{
+    margin:20,
+    padding:0,
+    height:40,
+  },
   card: {
   //  display:'inline-block',
    overflowX:'auto',
+   //paddingRight:5,
    whiteSpace:'nowrap',
   // overflowY:'hidden',
+  height:20,
 
   },
   link:{
     display: 'inlineBlock',
    color: 'white',
    textAlign: 'center',
-   padding: '14px',
-   textDecoration: 'none',
-  },
+   paddingLeft:10,
+   textDecoration: 'capital',
+ },
   mediaDiv:{
     width:'300px',
     [theme.breakpoints.down('sm')]: {
@@ -91,7 +97,9 @@ class SlideBar extends React.Component {
     const { classes } = this.props;
 
     return (
+      <div className={classes.menudiv}>
       <Card className={classes.card}>
+        <div style={{height:'50px',overflow:'auto'}}>
   <a className={classes.link}>Home</a>
   <a className={classes.link}>News</a>
   <a className={classes.link}>Contact</a>
@@ -116,8 +124,9 @@ class SlideBar extends React.Component {
     <a className={classes.link}>Partners</a>
     <a className={classes.link}>People</a>
     <a className={classes.link}>Work</a>
-
+</div>
       </Card>
+      </div>
     );
   }
 }
